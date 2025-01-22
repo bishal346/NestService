@@ -1,0 +1,27 @@
+### List all cpu
+POST http://localhost:3000/reports/createReort
+content-type: application/json
+
+{
+  "price": 10000,
+  "make": "Maruti", 
+  "model": "Suzuki", 
+  "lat": 12, 
+  "long": 12, 
+  "year": 2008, 
+  "milage": 606700 
+}
+
+### List all cpu
+GET http://localhost:3000/reports/findAll
+
+### Approve a report
+PATCH http://localhost:3000/reports/approve/6
+content-type: application/json
+
+{
+  "approve": true
+}
+
+### List all the cars
+GET http://localhost:3000/reports/findByQuery?make=Maruti&model=Suzuki&lat=7&long=8&year=1990&milage=3000

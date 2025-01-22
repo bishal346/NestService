@@ -1,0 +1,54 @@
+### List all disk
+GET http://localhost:3000/auth/allUsers
+### List all disk
+GET http://localhost:3000/auth/whoami
+### List who is that
+GET http://localhost:3000/auth/who
+### List all disk
+GET http://localhost:3000/auth/color
+
+### List all disk
+GET http://localhost:3000/auth/logout
+
+
+### List all cpu
+POST http://localhost:3000/auth/signup
+content-type: application/json
+
+{
+  "email": "ldhideabc@xeno.com",
+  "password": "binWalaReUXUI%678"
+}
+### List all cpu
+POST http://localhost:3000/auth/signin
+content-type: application/json
+
+{
+  "email": "ldhideabc@xeno.com",
+  "password": "binWalaReUXUI%678"
+}
+## Create a new user
+# POST http://localhost:3000/auth/signup
+# content-type: application/json
+
+# {
+#     "email" : "Get There", 
+#     "password" : "hguhfd@123"
+# }
+
+### Get a particular message
+GET http://localhost:3000/auth/findUserById/6
+
+### Get a particular user
+GET http://localhost:3000/auth/findUserByEmail?email=ldhide@xeno.com
+
+### GDeleteet a particular message
+DELETE http://localhost:3000/auth/removeUser/5
+
+### Update User
+PATCH http://localhost:3000/auth/updateUser/6
+content-type: application/json
+
+{
+  "email": "ameoba@xmlmail.com"
+}

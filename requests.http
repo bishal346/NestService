@@ -1,0 +1,17 @@
+### List all disk
+GET http://localhost:3000/computer/disk
+
+### List all cpu
+GET http://localhost:3000/computer/cpu
+
+## Create a new user
+POST http://localhost:3000/auth/signup
+content-type: application/json
+
+{
+    "email" : "Get There", 
+    "password" : "hguhfd@123"
+}
+
+# ### Get a particular message
+# GET http://localhost:3000/messages/915
