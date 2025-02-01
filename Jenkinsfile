@@ -21,5 +21,10 @@ pipeline {
                 '''
             }
         }
+        stage("Test") {
+            steps {
+                echo "Hello from Second Stage"
+            }
+        }
     }
 }
