@@ -31,7 +31,7 @@ pipeline {
             steps {
                 echo "Hello from Second Stage"
                 sh '''
-                    npm test
+                    npm test app.controller.spec.ts
                 '''
             }
         }
