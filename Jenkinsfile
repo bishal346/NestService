@@ -45,5 +45,19 @@ pipeline {
                 echo "Hello from Print2"
             }
         }
+        stage("Parallel Stages") {
+            parallel {
+                stage("Print1") {
+                    steps {
+                        echo "Hello from Parallel Print1"
+                    }
+                }
+                stage("Print2") {
+                    steps {
+                        echo "Hello from Parallel Print2"
+                    }
+                }
+            }
+        }
     }
 }
