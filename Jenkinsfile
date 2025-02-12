@@ -35,5 +35,15 @@ pipeline {
                 '''
             }
         }
+        stage("Print1") {
+            steps {
+                echo "Hello from Print1"
+            }
+        }
+        stage("Print2") {
+            steps {
+                echo "Hello from Print2"
+            }
+        }
     }
 }
